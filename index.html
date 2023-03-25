@@ -10,6 +10,7 @@
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" />
 
     <!-- Tailwind Elements CSS -->
     <link rel="stylesheet" href="css/index.min.css" />
@@ -25,11 +26,19 @@
 <body>
 
     <section class="bg-white">
-        <div class="tile bg-amber-500 col-span-1 md:col-span-2 lg:col-span-3">
-            <h1 class="tile-marker">TWO</h1>
-        </div>
-        <div class="tile bg-yellow-500 col-span-2 md:col-span-3 lg:col-span-5">
-            <h1 class="tile-marker">THREE</h1>
+        <div class="grid grid-cols-5 gap-3">
+            <div class="bg-blue-100">
+                <img class="h-28" src="img/logo.png" alt="">
+            </div>
+            <div class="bg-red-100 col-span-4 flex items-center justify-end bg-gray-100">
+                <button
+                    class="group rounded-2xl h-12 w-48 bg-#3e9b9e-500 font-bold text-lg text-white relative overflow-hidden">
+                    Join us
+                    <div
+                        class="absolute duration-300 inset-0 w-full h-full transition-all scale-0 group-hover:scale-100 group-hover:bg-white/30 rounded-2xl">
+                    </div>
+                </button>
+            </div>
         </div>
     </section>
 
