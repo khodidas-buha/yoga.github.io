@@ -30,7 +30,7 @@
 
 <body>
 
-  <section class="bg-white">
+  <section class="bg-blue-50">
     <div class="grid grid-cols-1 sm:grid-cols-5 gap-0">
       <div class="flex justify-center items-center">
         <img class="h-16 sm:h-28" src="img/logo.png" alt="Logo">
@@ -39,13 +39,14 @@
         <h1 class="text-lg sm:text-2xl font-bold text-center text-[#3e9b9e] sm:text-left">"Yoga is the journey of the
           self, through the self, to the self"</h1>
         <button
-          class="group rounded-lg h-10 sm:h-12 w-full sm:w-36 bg-[#3e9b9e] border-2 border-[#3e9b9e] text-white hover:text-[#3e9b9e] hover:bg-white hover:border-[#3e9b9e] font-bold text-sm sm:text-lg relative overflow-hidden transition-colors duration-300 focus:outline-none mt-4 sm:mt-0">Join
+          class="group rounded-lg h-10 sm:h-12 w-full sm:w-36 bg-[#3e9b9e] border-2 border-[#3e9b9e] text-white hover:text-[#3e9b9e] hover:bg-white hover:border-[#3e9b9e] font-bold text-sm sm:text-lg relative overflow-hidden transition-colors duration-300 focus:outline-none mt-4 sm:mt-0"
+          onclick="toggleModal()">Join
           us</button>
       </div>
     </div>
   </section>
 
-  <nav class="sticky bg-blue-50 shadow shadow-gray-300 w-100 px-8 md:px-auto">
+  <nav class="sticky bg-blue-100 shadow shadow-gray-300 w-100 px-8 md:px-auto z-[999]">
     <div class="md:h-16 h-14 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
       <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
         <ul class="flex font-semibold justify-between">
@@ -82,7 +83,7 @@
 
   <!-- hero section -->
   <section>
-    <div class="bg-blue-100 text-white py-20">
+    <div class="bg-blue-50 text-white py-20">
       <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
         <div class="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
           <h1 class="text-3xl md:text-5xl text-[#3e9b9e] tracking-loose font-bold pb-3">YogaFest</h1>
@@ -111,62 +112,250 @@
     </div>
   </section>
 
-  <section class="bg-blue-100 text-gray-800 dark:text-white py-10 my-2">
-  <div class="container mx-auto flex flex-col md:flex-row items-center ">
-    <div class="md:w-2/3 md:mr-8 lg:mr-12">
-      <div class="md:flex md:flex-wrap md:content-center">
-        <div class="md:w-1/2 md:pr-4">
-          <img class="h-64 md:h-auto hidden md:block w-full object-cover rounded-md shadow-md" src="img/about-1.jpg" alt="">
+  <section class="bg-blue-50 text-gray-800 dark:text-white py-10 my-2">
+    <div class="container mx-auto flex flex-col md:flex-row items-center ">
+      <div class="md:w-2/3 md:mr-8 lg:mr-12">
+        <div class="md:flex md:flex-wrap md:content-center">
+          <div class="md:w-1/2 md:pr-4">
+            <img class="h-64 md:h-auto hidden md:block w-full object-cover rounded-md shadow-md" src="img/about-1.jpg"
+              alt="">
+          </div>
+          <div class="md:w-1/2 md:pl-4 md:pt-[1rem]">
+            <img class="mb-8 h-48 md:h-auto w-full object-cover rounded-md shadow-md" src="img/about-2.jpg" alt="">
+            <img class="h-48 md:h-auto w-full object-cover rounded-md shadow-md" src="img/about-3.jpg" alt="">
+          </div>
         </div>
-        <div class="md:w-1/2 md:pl-4 md:pt-[1rem]">
-          <img class="mb-8 h-48 md:h-auto w-full object-cover rounded-md shadow-md" src="img/about-2.jpg" alt="">
-          <img class="h-48 md:h-auto w-full object-cover rounded-md shadow-md" src="img/about-3.jpg" alt="">
+      </div>
+      <div class="md:w-1/3 md:pl-8 lg:pl-12">
+        <div class="lg:max-w-lg p-8 justify-center">
+          <h1 class="text-3xl lg:text-3xl font-semibold mb-4">
+            Transform Your Body and Mind with <span class="text-teal-500">Yoga</span>
+          </h1>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Yoga is a holistic practice that combines movement, breath, and meditation to improve overall health and
+            transform the body and mind.
+          </p>
+          <p class="mt-3 mb-3 text-gray-600 dark:text-gray-400">
+            Yoga is a holistic practice that can help individuals improve their overall health and transform their
+            bodies and minds through the combination of movement, breath, and meditation.
+          </p>
+          <button class=" group rounded-lg h-10 sm:h-12 w-full sm:w-36 bg-[#3e9b9e] border-2 border-[#3e9b9e]
+        text-white hover:text-[#3e9b9e] hover:bg-white hover:border-[#3e9b9e] font-bold text-sm sm:text-lg relative
+        overflow-hidden transition-colors duration-300 focus:outline-none mt-4 sm:mt-0">read
+            more</button>
         </div>
       </div>
     </div>
-    <div class="md:w-1/3 md:pl-8 lg:pl-12">
-      <div class="lg:max-w-lg p-8 justify-center">
-        <h1 class="text-3xl lg:text-3xl font-semibold mb-4">
-          Transform Your Body and Mind with <span class="text-teal-500">Yoga</span>
-        </h1>
-        <p class="text-gray-600 dark:text-gray-400 mb-4">
-          Yoga is a holistic practice that combines movement, breath, and meditation to improve overall health and
-          transform the body and mind.
-        </p>
-        <p class="mt-3 mb-3 text-gray-600 dark:text-gray-400">
-          Yoga is a holistic practice that can help individuals improve their overall health and transform their
-          bodies and minds through the combination of movement, breath, and meditation.
-        </p>
-        <button class=" group rounded-lg h-10 sm:h-12 w-full sm:w-36 bg-[#3e9b9e] border-2 border-[#3e9b9e]
-        text-white hover:text-[#3e9b9e] hover:bg-white hover:border-[#3e9b9e] font-bold text-sm sm:text-lg relative
-        overflow-hidden transition-colors duration-300 focus:outline-none mt-4 sm:mt-0">read
-        more</button>
+  </section>
+
+  <section class="bg-blue-50">
+    <div class="section relative pt-20 pb-8 md:pt-16 md:pb-16 md:pb-0">
+      <div class="container mx-auto px-4 6xl:max-w-6xl">
+        <div class="text-center mx-auto lg:px-20">
+          <h2 class="text-black font-bold text-3xl md:text-4xl pb-12 capitalize">
+            Enjoy All Aspects Of <span class="text-[#3e9b9e]">Yoga</span>
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+          <div
+            class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div class="flex items-center justify-center h-32 p-8">
+              <img class="h-16 w-16" src="img/yoga1.jpg" alt="">
+            </div>
+            <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center text-center">Asana</h3>
+            <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+              experience India!</p>
+          </div>
+          <div
+            class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div class="flex items-center justify-center h-32 p-8">
+              <img class="h-16 w-16" src="img/yoga2.jpg" alt="">
+            </div>
+            <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center">Meditation</h3>
+            <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+              experience India!</p>
+          </div>
+          <div
+            class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div class="flex items-center justify-center h-32 p-8">
+              <img class="h-16 w-16" src="img/yoga3.jpg" alt="">
+            </div>
+            <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center">Mudra</h3>
+            <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+              experience India!</p>
+          </div>
+          <div
+            class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div class="flex items-center justify-center h-32 p-8">
+              <img class="h-16 w-16" src="img/yoga4.jpg" alt="">
+            </div>
+            <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center">Bandhas</h3>
+            <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+              experience India!</p>
+          </div>
+          <div
+            class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div class="flex items-center justify-center h-32 p-8">
+              <img class="h-16 w-16" src="img/yoga4.jpg" alt="">
+            </div>
+            <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center">Philosophy</h3>
+            <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+              experience India!</p>
+          </div>
+          <div
+            class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div class="flex items-center justify-center h-32 p-8">
+              <img class="h-16 w-16" src="img/yoga4.jpg" alt="">
+            </div>
+            <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center">Pranayama</h3>
+            <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+              experience India!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section>
+
+    <div class="h-80">
+
+    </div>
+  </section>
+
+
+
+  <!-- component -->
+
+  <footer class="relative bg-blue-50 pt-8 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap text-left lg:text-left">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+            Find us on any of these platforms, we respond 1-2 business days.
+          </h5>
+          <div class="mt-6 lg:mb-0 mb-6">
+            <button
+              class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
+              <i class="fab fa-youtube"></i></button><button
+              class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
+              <i class="fab fa-facebook-f"></i></button><button
+              class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
+              <i class="fab fa-instagram"></i></button><button
+              class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
+              <i class="fab fa-whatsapp"></i>
+            </button>
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">About
+                    Us</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="#">Blog</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="#">Github</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Free
+                    Products</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-4/12 px-4">
+              <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">MIT
+                    License</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Terms
+                    &amp; Conditions</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Privacy
+                    Policy</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Contact
+                    Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-blueGray-300">
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-blueGray-500 font-semibold py-1">
+            Copyright © <span id="get-current-year">2023</span><a href="https://www.creative-tim.com/product/notus-js"
+              class="text-blueGray-500 hover:text-gray-800" target="_blank"> Design by
+              <a href="https://www.creative-tim.com?ref=njs-profile"
+                class="text-blueGray-500 hover:text-blueGray-800">khodidas</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- join us btn -->
+
+  <div class="popup-bg hidden fixed  w-full h-full bg-gray-900 bg-opacity-50 z-50" id="modal">
+    <div
+      class="popup relative bg-white w-96 mx-auto my-auto mt-5 ml-0 px-6 py-0 rounded-xl flex items-center justify-center">
+      <button class="absolute top-2 right-2 p-2 text-gray-600 hover:text-gray-800 focus:outline-none" id="close-btn">
+        <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="flex items-center justify-center">
+        <img src="img/popup.png" style="width:138px;" alt="">
+      </div>
+      <div class="sm:flex sm:items-start">
+        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+          <h3 class="text-2xl font-semibold leading-6 text-gray-900 text-center" id="modal-title">Sign up for our
+            newsletter</h3>
+          <div class="mt-2">
+            <p class="text-sm text-gray-500 text-center">Join our community of real estate enthusiasts and receive our
+              monthly newsletter packed with valuable information to help you make informed decisions about buying,
+              selling, and maintaining your dream home.</p>
+          </div>
+        </div>
+      </div>
+      <input type="text" placeholder="Enter Email address"
+        class="block w-full px-5 py-1 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-orange-400 focus:ring-orange-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+      <div class="px-4 py-3 flex justify-center">
+        <button type="button"
+          class="inline-flex w-full justify-center rounded-3xl bg-orange-600 px-10 py-2 text-md font-semibold text-white shadow-sm hover:bg-orange-500 sm:w-auto focus:outline-none focus:ring-0">send</button>
       </div>
     </div>
   </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
