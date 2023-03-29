@@ -26,6 +26,10 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- slider use this link -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css'>
+
 </head>
 
 <body>
@@ -102,7 +106,8 @@
             </div>
             <div>
               <img class="inline-block mt-24 hidden xl:block md:mt-0 p-8 md:p-0" src="img/hero-2.png">
-              <img class="inline-block mt-5 lg:hidden md:mt-0 p-8 md:p-0 w-full h-auto w-full md:w-auto" src="img/hero-22.jpg">
+              <img class="inline-block mt-5 lg:hidden md:mt-0 p-8 md:p-0 w-full h-auto w-full md:w-auto"
+                src="img/hero-22.jpg">
             </div>
             <div>
               <img class="inline-block mt-28 hidden lg:block" src="img/hero-3.png">
@@ -149,7 +154,7 @@
     </div>
   </section>
 
-  <section class="bg-blue-50">
+  <section class="bg-blue-50 hidden md:block">
     <div class="section relative pt-20 pb-8 md:pt-16 md:pb-16 md:pb-0">
       <div class="container mx-auto px-4 6xl:max-w-6xl">
         <div class="text-center mx-auto lg:px-20">
@@ -218,8 +223,91 @@
   </section>
 
 
-
-
+  <section class="md:hidden block bg-blue-50 mt-2">
+    <div class="container mx-auto px-4 6xl:max-w-6xl">
+      <div class="text-center mx-auto lg:px-20">
+        <h2 class="text-black font-bold text-3xl md:text-4xl py-5 capitalize">
+          Enjoy All Aspects Of <span class="text-[#3e9b9e]">Yoga</span>
+        </h2>
+      </div>
+    </div>
+    <div class="glide xl:w-[54rem] lg:w-[42rem] md:w-[30rem] sm:w-[18rem] px-16 py-8 ">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div
+              class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div class="flex items-center justify-center h-32 p-8">
+                <img class="h-16 w-16" src="img/yoga1.jpg" alt="">
+              </div>
+              <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center text-center">Asana</h3>
+              <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+                experience India!</p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div
+              class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div class="flex items-center justify-center h-32 p-8">
+                <img class="h-16 w-16" src="img/yoga2.jpg" alt="">
+              </div>
+              <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center">Meditation</h3>
+              <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+                experience India!</p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div
+              class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div class="flex items-center justify-center h-32 p-8">
+                <img class="h-16 w-16" src="img/yoga3.jpg" alt="">
+              </div>
+              <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center">Mudra</h3>
+              <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+                experience India!</p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div
+              class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div class="flex items-center justify-center h-32 p-8">
+                <img class="h-16 w-16" src="img/yoga4.jpg" alt="">
+              </div>
+              <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center">Philosophy</h3>
+              <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+                experience India!</p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div
+              class="bg-blue-100 rounded-md border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div class="flex items-center justify-center h-32 p-8">
+                <img class="h-16 w-16" src="img/yoga4.jpg" alt="">
+              </div>
+              <h3 class="text-lg leading-normal font-semibold text-black mb-2 text-center">Pranayama</h3>
+              <p class="text-gray-500 p-3">Grab the opportunity to deepen your own yoga practice, relax, restore and
+                experience India!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left left-4" data-glide-dir="<">
+          <div
+            class="group rounded-full h-9 w-9 bg-[#3e9b9e] border-2 border-[#3e9b9e] font-bold text-sm sm:text-lg relative overflow-hidden focus:outline-none">
+            
+            <i class="fas fa-angle-left text-white text-2xl"></i>
+          </div>
+        </button>
+        <button class="glide__arrow glide__arrow--right right-4" data-glide-dir=">">
+          <div
+            class="group rounded-full h-9 w-9 bg-[#3e9b9e] border-2 border-[#3e9b9e] font-bold text-sm sm:text-lg relative overflow-hidden focus:outline-none">
+            <i class="fas fa-angle-right text-white text-2xl"></i>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -356,7 +444,9 @@
       </div>
     </div>
   </div>
-
+  <!-- use this in slider -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js'></script>
   <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
   <script src="js/script.js"></script>
