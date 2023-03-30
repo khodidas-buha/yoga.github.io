@@ -51,3 +51,19 @@ const config = {
     }
   }
   new Glide('.glide2', config2).mount()
+
+
+  /* YOU DONT NEED THESE, these are just for the popup you see */
+function closeTreactPopup(){ 
+  document.querySelector(".treact-popup").classList.add("hidden");
+}
+function openTreactPopup(){ 
+  document.querySelector(".treact-popup").classList.remove("hidden");
+}
+document.querySelector(".close-treact-popup").addEventListener("click", closeTreactPopup);
+setTimeout(openTreactPopup, 3000)
+
+$('.question-and-answer').click(function() {
+  $(this).find(".answer").toggleClass("hidden")
+  $(this).find(".question-chevron").toggleClass("hidden")
+})
