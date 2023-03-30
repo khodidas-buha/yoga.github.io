@@ -11,3 +11,8 @@
     opacity: 1;
     transform: translateY(-50%);
 }
+meter {  
+  margin: 0 1rem;
+  width: 20rem;
+  height: 2rem;
+}
