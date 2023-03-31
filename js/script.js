@@ -63,6 +63,8 @@ function openTreactPopup(){
 document.querySelector(".close-treact-popup").addEventListener("click", closeTreactPopup);
 setTimeout(openTreactPopup, 3000)
 
+// fq
+
 $('.question-and-answer').click(function() {
   $(this).find(".answer").toggleClass("hidden")
   $(this).find(".question-chevron").toggleClass("hidden")
