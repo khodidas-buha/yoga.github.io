@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -48,4 +51,20 @@ meter {
     opacity: 1;
     transform: translateY(-400%);
   }
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  display: none;
+  /* background-color: #f97316; */
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  z-index: 999;
+}
+#btn-back-to-top img {
+  width: 30px;
+  margin-left: 10px;
 }
