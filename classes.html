@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga | Yoga is the journey of the self, through the self, to the self</title>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" />
+
+    <!-- Tailwind Elements CSS -->
+    <link rel="stylesheet" href="css/index.min.css" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!--fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- slider use this link -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css'>
+
+</head>
+
+<body>
+
+    <section class="bg-blue-50">
+        <div class="grid grid-cols-1 sm:grid-cols-5 gap-0">
+            <div class="flex justify-center items-center">
+                <img class="h-16 sm:h-28" src="img/logo.png" alt="Logo">
+            </div>
+            <div class="col-span-1 sm:col-span-4 flex flex-col sm:flex-row justify-between items-center px-4 py-2">
+                <h1 class="text-lg sm:text-2xl font-bold text-center text-[#3e9b9e] sm:text-left">"Yoga is the journey
+                    of the
+                    self, through the self, to the self"</h1>
+                <button
+                    class="group rounded-lg h-10 sm:h-12 w-full sm:w-36 bg-[#3e9b9e] border-2 border-[#3e9b9e] text-white hover:text-[#3e9b9e] hover:bg-white hover:border-[#3e9b9e] font-bold text-sm sm:text-lg relative overflow-hidden transition-colors duration-300 focus:outline-none mt-4 sm:mt-0"
+                    onclick="toggleModal()">Join
+                    us</button>
+            </div>
+        </div>
+    </section>
+
+    <nav class="sticky bg-blue-100 shadow shadow-gray-300 w-100 px-8 md:px-auto z-[99]">
+        <div class="md:h-16 h-14 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
+            <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
+                <ul class="flex font-semibold justify-between">
+                    <li class="md:px-4 md:py-2 hover:text-[#2d696b] text-[#3e9b9e] transition-colors duration-300"><a
+                            href="#">Home</a></li>
+                    <li class="md:px-4 md:py-2 hover:text-[#2d696b] text-[#3e9b9e] transition-colors duration-300"><a
+                            href="#">Classes</a></li>
+                    <li class="md:px-4 md:py-2 hover:text-[#2d696b] text-[#3e9b9e] transition-colors duration-300"><a
+                            href="#">Teachers</a></li>
+                    <li class="md:px-4 md:py-2 hover:text-[#2d696b] text-[#3e9b9e] transition-colors duration-300"><a
+                            href="#">Blog</a></li>
+                    <li class="md:px-4 md:py-2 hover:text-[#2d696b] text-[#3e9b9e] transition-colors duration-300"><a
+                            href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="order-2 md:order-3 hidden md:block">
+                <!--YouTube Button -->
+                <button id="youtube"
+                    class="transform hover:-translate-y-1  w-12 h-12 duration-500 text-[#2d696b] text-2xl">
+                    <i class="fab fa-youtube"></i>
+                </button>
+                <!--facebook Button -->
+                <button id="facebook"
+                    class="transform hover:-translate-y-1  w-12 h-12 duration-500 text-[#2d696b] text-2xl">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <!--instagram Button -->
+                <button id="instagram"
+                    class="transform hover:-translate-y-1  w-12 h-12 duration-500 text-[#2d696b] text-2xl">
+                    <i class="fab fa-instagram"></i>
+                </button>
+                <!--whatsapp Button -->
+                <button id="whatsapp"
+                    class="transform hover:-translate-y-1  w-12 h-12 duration-500 text-[#2d696b] text-2xl">
+                    <i class="fab fa-whatsapp"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- classes card -->
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto px-4 lg:px-24 pt-16 pb-16 bg-blue-50 mt-2">
+        <div class="bg-white rounded-lg shadow overflow-hidden w-full">
+            <div class="w-full">
+                <img src="./images/rover.jpeg" alt="rover" class="w-full object-cover h-48">
+            </div>
+            <div class="p-6">
+                <span
+                    class="inline-block bg-teal-500 rounded-full px-2 py-1 text-xs font-semibold text-white uppercase tracking-wide">Technology</span>
+                <h4 class="text-xl font-semibold mt-4 mb-2">Why is the Tesla Cybertruck designed the way it is?</h4>
+                <p class="text-gray-700 leading-snug">An exploration into the truck's polarising design.</p>
+                <div class="flex items-center mt-6">
+                    <img src="./images/user-1.jpg" alt="user 1" class="w-10 h-10 rounded-full">
+                    <div class="ml-4">
+                        <h5 class="text-sm font-medium text-gray-900">Carrie Brewer</h5>
+                        <small class="text-gray-500">2h ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden w-full">
+            <div class="w-full">
+                <img src="./images/ballons.jpeg" alt="ballons" class="w-full object-cover h-48">
+            </div>
+            <div class="p-6">
+                <span
+                    class="inline-block bg-purple-500 rounded-full px-2 py-1 text-xs font-semibold text-white uppercase tracking-wide">Popular</span>
+                <h4 class="text-xl font-semibold mt-4 mb-2">How to Keep Going When You Don't Know What's Next</h4>
+                <p class="text-gray-700 leading-snug">The future can be scary, but there are ways to deal with that
+                    fear.</p>
+                <div class="flex items-center mt-6">
+                    <img src="./images/user-2.jpg" alt="user 2" class="w-10 h-10 rounded-full">
+                    <div class="ml-4">
+                        <h5 class="text-sm font-medium text-gray-900">Jerome Walton</h5>
+                        <small class="text-gray-500">Yesterday</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden w-full">
+            <div class="w-full">
+                <img src="./images/city.jpeg" alt="city" class="w-full object-cover h-48">
+            </div>
+            <div class="p-6">
+                <span
+                    class="inline-block bg-pink-500 rounded-full px-2 py-1 text-xs font-semibold text-white uppercase tracking-wide">Design</span>
+                <h4 class="text-xl font-semibold mt-4 mb-2">10 Rules of Dashboard Design</h4>
+                <p class="text-gray-700 leading-snug">Dashboard Design Guidelines</p>
+                <div class="flex items-center mt-6">
+                    <img src="./images/user-3.jpg" alt="user 3" class="w-10 h-10 rounded-full">
+                    <div class="ml-4">
+                        <h5 class="text-sm font-medium text-gray-900">Lewis Daniels</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- component -->
+<footer aria-label="Site Footer" class="lg:grid lg:grid-cols-5 bg-blue-50">
+    <div class="relative block h-48 lg:col-span-2 lg:h-full">
+        <img src="img/footer.jpg" alt="" class="absolute inset-0 object-cover w-full h-full" />
+    </div>
+
+
+    <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div>
+                <p>
+                    <span class="text-xs tracking-wide text-gray-500 uppercase">
+                        Call us
+                    </span>
+
+                    <a href="#" class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
+                        0123456789
+                    </a>
+                </p>
+
+                <ul class="mt-8 space-y-1 text-sm text-gray-700">
+                    <li>Monday to Friday: 10am - 5pm</li>
+                    <li>Weekend: 10am - 3pm</li>
+                </ul>
+
+                <div class="flex gap-6 mt-8">
+                    <button
+                        class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        type="button">
+                        <i class="fab fa-youtube"></i></button><button
+                        class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        type="button">
+                        <i class="fab fa-facebook-f"></i></button><button
+                        class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        type="button">
+                        <i class="fab fa-instagram"></i></button><button
+                        class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                        type="button">
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                    <p class="font-medium text-gray-900">Services</p>
+
+                    <nav aria-label="Footer Navigation - Services" class="mt-6">
+                        <ul class="space-y-4 text-sm">
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Online Pilates
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Yoga for Beginners
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Online Yoga
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Conditioning
+                                </a>
+                            </li>
+
+                            <!-- <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    SEO Optimisation
+                  </a>
+                </li> -->
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <p class="font-medium text-gray-900">About Us</p>
+
+                    <nav aria-label="Footer Navigation - Company" class="mt-6">
+                        <ul class="space-y-4 text-sm">
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Our Vision
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Our Mission
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Meet The Team
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Customer Service
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-12 mt-12 border-t border-gray-100">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <nav aria-label="Footer Navigation - Support">
+                    <ul class="flex flex-wrap gap-4 text-xs">
+                        <li>
+                            <a href="#" class="text-gray-500 transition hover:opacity-75">
+                                Terms & Conditions
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-gray-500 transition hover:opacity-75">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-gray-500 transition hover:opacity-75">
+                                Cookies
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <p class="mt-8 text-xs text-gray-500 sm:mt-0">
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
+                    made with
+                    <i class="fa fa-heart text-red-600" aria-hidden="true"></i> by <a href="#"
+                        target="_blank">Khodidas</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div>
+    <button type="button" class="btn btn-lg bg-[#3e9b9e]" id="btn-back-to-top">
+        <img src="img/yoga-up.png" alt="">
+    </button>
+</div>
+
+<!-- join us btn -->
+<div class="fixed z-[99] overflow-y-auto top-0 w-full left-0 hidden" id="modal">
+    <div class="flex items-center justify-center h-screen px-4 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 transition-opacity">
+            <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+        </div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+        <div class="inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all max-w-lg w-full"
+            role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6">
+                <label class="block mb-2 font-bold">Name</label>
+                <input type="text"
+                    class="block w-full px-3 py-2 mt-1 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-400 focus:border-orange-400">
+                <label class="block mt-4 mb-2 font-bold">Mobile Number</label>
+                <input type="text"
+                    class="block w-full px-3 py-2 mt-1 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-400 focus:border-orange-400">
+                <label class="block mt-4 mb-2 font-bold">Message</label>
+                <input type="text"
+                    class="block w-full px-3 py-2 mt-1 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-400 focus:border-orange-400">
+            </div>
+            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                <button type="button"
+                    class="group rounded-lg h-10 sm:h-12 w-28 sm:w-36 bg-[#3e9b9e] border-2 border-[#3e9b9e] text-white hover:text-[#3e9b9e] hover:bg-white hover:border-[#3e9b9e] font-bold text-sm sm:text-lg relative overflow-hidden transition-colors duration-300 focus:outline-none mt-4 sm:mt-0"
+                    onclick="toggleModal()">Cancel</button>
+                <button type="button"
+                    class="group rounded-lg h-10 sm:h-12 w-28 sm:w-36 bg-[#3e9b9e] border-2 border-[#3e9b9e] text-white hover:text-[#3e9b9e] hover:bg-white hover:border-[#3e9b9e] font-bold text-sm sm:text-lg relative overflow-hidden transition-colors duration-300 focus:outline-none mt-4 sm:mt-0">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- use this in slider -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js'></script>
+<!-- jquery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
